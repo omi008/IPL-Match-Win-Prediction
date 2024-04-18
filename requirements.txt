@@ -1,4 +1,8 @@
 streamlit
-pandas
 numpy
-sklearn
+pandas
+scikit-learn
+matplotlib
+seaborn
+joblib
+flask
