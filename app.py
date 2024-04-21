@@ -36,7 +36,7 @@ try:
     with col3:
         score = st.number_input('Score')
     with col4:
-        overs = st.selectbox('Overs completed', list(range(1, 21)))
+        overs = st.selectbox('Overs completed', list(range(0, 21)))
     with col5:
         wickets = st.selectbox('Wickets out', list(range(0, 11)))  
 
