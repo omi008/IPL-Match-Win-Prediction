@@ -34,7 +34,7 @@ try:
     col3,col4,col5 = st.columns(3)
 
     with col3:
-        score = st.number_input('Score)
+        score = st.number_input('Score')
     with col4:
         overs = st.selectbox('Overs completed', list(range(1, 21)))
     with col5:
