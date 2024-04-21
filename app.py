@@ -59,7 +59,7 @@ try:
         else:
             st.error("team should be diffrent")
 except Exception as e:
-    st.error("Error")
+    st.error("Please Check your Inputs")
 
 
 
