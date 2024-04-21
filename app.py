@@ -36,12 +36,15 @@ try:
     with col3:
         score = st.number_input('Score')
     with col4:
-        overs = st.nuber_input('Overs completed')
+        overs = st.number_input('Overs completed')
     with col5:
-        wickets = st.selectbox('Wickets out', list(range(0, 11)))  
+        wickets = st.selectbox('Wickets out', list(range(0,11)))
+
 
     if st.button('Predict Probability'):
         if bowling_team != batting_team:
+
+
             runs_left = target - score
             balls_left = 120 - (overs*6)
             wickets = 10 - wickets
@@ -56,9 +59,9 @@ try:
             st.header(batting_team + "- " + str(round(win*100)) + "%")
             st.header(bowling_team + "- " + str(round(loss*100)) + "%")
         else:
-            st.error("Batting team and Bowling team should be diffrent")
+            st.error("team should be diffrent")
 except Exception as e:
-    st.error("Please Check your Inputs")
+    st.error("Please check your input")
 
 
 
