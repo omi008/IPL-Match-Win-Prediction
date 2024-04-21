@@ -56,7 +56,7 @@ try:
             st.header(batting_team + "- " + str(round(win*100)) + "%")
             st.header(bowling_team + "- " + str(round(loss*100)) + "%")
         else:
-            st.error("Team should be different")
+            st.error("Batting team and Bowling team should be different")
 
 except Exception as e:
     st.error("Error")
